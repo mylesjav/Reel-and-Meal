@@ -1,0 +1,28 @@
+/* Starter for the Style   */
+* {
+    
+}
+/* Style for the header and title of the site
+adding classes for possible use */
+.header {
+
+}
+.nav_links{
+
+}
+/* Main body for the movie search
+additionals for the search bar and 'Get Meals' button */
+.search_container{}
+.search_container .search{}
+.search_container .submit_btn{}
+/* Starting off the card section */
+.card{}
+/* Added for the image of meal if wanted can remove */
+.card img{}
+/* Name of the meal for card */
+.card_name{}
+/* Meal description and/or recipe can add additional for recipe */
+.card_desc{}
+/* Event button to redirect to full recipe */
+.card_recipe_full{}
+/* Will add further detail to cards Just starting out possible classes */
