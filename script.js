@@ -56,34 +56,34 @@ function getMoviedetails(movie) {
 
 function getMealsuggestionsByGenre(genre) {
     var genreAssociationtable = {
-        'Action':
-        'Adventure':
-        'Animation':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
-        'Action':
+        'Action': "Pizza",
+        'Adventure': "Sandwich",
+        'Animation': "Colorful",
+        'Biography': "Hot Dog",
+        'Comedy': "French fries",
+        'Crime': "Scary",
+        'Documentary': "Stew",
+        'Drama': "Steak",
+        'Family': "Kid Friendly",
+        'Fantasy': "English",
+        'Film-Nior': "Pot-Pie",
+        'Game-Show': "Nachos",
+        'History': "Meatloaf",
+        'Horror': "Scary",
+        'Music': "Wine",
+        'Musical': "Wine",
+        'Mystery': "Spam",
+        'News': "Salmon",
+        'Reality-TV': "Salad",
+        'Romance': "Date Night",
+        'Sci-Fi': "Sushi",
+        'Sport': "Tailgate",
+        'Talk-Show': "Frozen Dinner",
+        'Thiller': "Italian",
+        'War': "Fried Chicken",
+        'Western': "Western",
     }
+    var cuisine
 
 }
 
