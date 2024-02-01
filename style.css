@@ -1,1 +1,114 @@
 /* Starter for the Style   */
+ /* Header*/
+ header {
+    font-weight: bold;
+    background-color: #a39f9f;
+    font-size: 55px;
+    padding: 8px;
+  }
+  /* search container */
+  .search-container{
+    text-align: center;
+    background-color: #c9c5c5;
+    padding: 70px;
+    margin: 10px;
+  }
+  /* Stlye for the search and submit button */
+  form.search input{
+    padding: 10px;
+   font-size: 15px;
+    border: 1px solid rgb(8, 8, 8);
+    width: 250px;
+    background: #fffefe;
+    border-radius: 8px;
+  }
+  /* Container for submit button to move down line */
+  .button{
+    padding: 12px;
+  }
+  /* Submit button style */
+  form.search button {
+    width: 270px;
+    height: 40px;
+    line-height: 1px;
+   background: #020202;
+   color: white;
+   border: #020202 1px solid;
+   border-radius: 8px;
+    font-size: 18px;
+   cursor: pointer;
+  }
+  form.search button:hover {
+   background: #6a6c6e;
+   color: #dbd9d9;
+}
+  /* Container for the movie titles */
+  .Name-Tag {
+    text-align: center;
+  }
+   /* Card Container */
+   .card-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+  }
+  /* Card  */
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 17%;
+    height: 450px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Card Image */
+  .card img {
+    display:block;
+    margin: 0 auto;
+    padding: 5%;
+    float: left;
+   width:  150px;
+   height: 100px;
+   object-fit: cover;
+  }
+
+  /* Card Content */
+  .card-content {
+    padding: 16px;
+  }
+
+  /* Card Title */
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  /* Card Description */
+  .card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+  }
+
+  /* Card Link */
+  .card-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  /* Hover effect on the link */
+  .card-link:hover {
+    text-decoration: underline;
+  }
