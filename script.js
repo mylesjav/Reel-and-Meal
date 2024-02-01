@@ -38,4 +38,29 @@ displaySearchHistory();
 
 
 
+//event handler for submit button
+$('#submitBtn').on('click', function() {
+    //setting a variable and setting value for eneteredMovie
+    var enteredMovie = $('movieInput').val();
+    //call the function to get movie details
+    getMoviedetails();
+})
 
+
+//function to get movie details
+function getMoviedetails(movie) {
+    var 
+    var
+    $ajax({});
+}
+
+
+function getMealsuggestionsByLOcation(location) {
+    var
+    var
+    $ajax({});
+}
+
+function displayMealSuggestion(mealSuggestions) {
+    var 
+}
