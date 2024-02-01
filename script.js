@@ -54,6 +54,43 @@ function getMoviedetails(movie) {
     $ajax({});
 }
 
+function getMealsuggestionsByGenre(genre) {
+    var genreAssociationtable = {
+        'Action':
+        'Adventure':
+        'Animation':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+        'Action':
+    }
+
+}
+
+
+
+
+
 
 function getMealsuggestionsByLOcation(location) {
     var
@@ -63,4 +100,5 @@ function getMealsuggestionsByLOcation(location) {
 
 function displayMealSuggestion(mealSuggestions) {
     var 
+
 }
