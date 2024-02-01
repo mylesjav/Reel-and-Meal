@@ -1,1 +1,41 @@
 console.log("hello world");
+
+//function to save search terms to local stroage
+function () {
+    //retrieve existing search history from local storage
+    var searchHistory =
+    //add new search term to the search history 
+    searchHistory.push(searchTerm);
+    //Save the updated search history
+
+};
+
+
+
+//function to display search history
+function idsplaySearchHistory() {
+    //retrieve search history
+    
+    //get the search historty div by id
+    
+    //for loop for each search term to display(jquery)
+    
+    //append a new div to the search history div
+    
+};
+
+
+
+//enable event handler ready for DOM
+$(document).ready(function() {
+    //show/hide search history button event handler
+
+    //toggle the button for search history
+    $("#searchHistory").toggle();
+});
+
+displaySearchHistory();
+
+
+
+
