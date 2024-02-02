@@ -1,13 +1,13 @@
 console.log("hello world");
 
 //function to save search terms to local stroage
-function () {
+function saveSearchToLocal(searchTerm) {
     //retrieve existing search history from local storage
-    var searchHistory =
+    var searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
     //add new search term to the search history 
     searchHistory.push(searchTerm);
     //Save the updated search history
-
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory))
 };
 
 
@@ -83,7 +83,21 @@ function getMealsuggestionsByGenre(genre) {
         'War': "Fried Chicken",
         'Western': "Western",
     }
-    var cuisine
+    //setting vaariable for cuisine
+    var cuisine = genreAssociationtable[genre];
+
+    if (cuisine) {
+        var edamamApiKey = 
+        var edamamApiUrl = 
+
+
+        $ajax({
+            url:
+            
+            
+        })
+        }
+    }
 
 }
 
