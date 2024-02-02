@@ -62,85 +62,102 @@ $(document).ready(function() {
                 apikey: ombdApiKey,
                 t: movie
             }
-            success: function(movieData) {}
+            success: function(movieData) {
+                var movieLocation = movieData.Country;
+                var movieGenre = movieData.Genre;
+
+                if (movieLocation && movieLocation.trim() !== '') {
+                    getMealsuggestionsByLOcation(movieLocation);
+                } else {
+                    getMealsuggestionsByGenre(movieGenre);
+                }
+            },
+            error: function(error) {
+                console.error("Error fetching movie details: ", error);
+            }
         });
-    };
+    }
     
+    function getMealsuggestionsByLOcation(location) {
+        var edamamApiKey
+        var edamamApiUrl
+        $ajax({
+            url:
+            method:
+            data:
+            success: function(mealData) {
+                var mealSuggestions = mealData.hits;
+                displayMealSuggestion(mealSuggestions);
+            },
+            error: function(error) {
+                console.error('Error fetching Meal suggestions:', error);
+            }
+        });
+    }
 
+    function getMealsuggestionsByGenre(genre) {
+        var genreAssociationtable = {
+            'Action': "Pizza",
+            'Adventure': "Sandwich",
+            'Animation': "Colorful",
+            'Biography': "Hot Dog",
+            'Comedy': "French fries",
+            'Crime': "Scary",
+            'Documentary': "Stew",
+            'Drama': "Steak",
+            'Family': "Kid Friendly",
+            'Fantasy': "English",
+            'Film-Nior': "Pot-Pie",
+            'Game-Show': "Nachos",
+            'History': "Meatloaf",
+            'Horror': "Scary",
+            'Music': "Wine",
+            'Musical': "Wine",
+            'Mystery': "Spam",
+            'News': "Salmon",
+            'Reality-TV': "Salad",
+            'Romance': "Date Night",
+            'Sci-Fi': "Sushi",
+            'Sport': "Tailgate",
+            'Talk-Show': "Frozen Dinner",
+            'Thiller': "Italian",
+            'War': "Fried Chicken",
+            'Western': "Western",
+        };
+        var cuisine = genreAssociationtable[genre];
 
+        if (cuisine) {
+            var edamamApiKey = 
+            var edamamApiUrl = 
+    
+    
+            $ajax({
+                url:
+                method:
+                data: {}
+                success: function(mealData) {
+                    var mealSuggestions = mealData.hits;
 
+                    displayMealSuggestion(mealSuggestions);
+                },
+                error: function(error) {
+                    console.error("Error fetching meal suggestions:", error);
+                }
+                
+                
+            });
+            
+        }else {
+            console.error("No corresponding cuisine found for the movie genre.");
+        }
+
+    }
 
 
 });
 
 
 
-
-
-//function to get movie details
-function getMoviedetails(movie) {
-    var 
-    var
-    $ajax({});
-}
-
-function getMealsuggestionsByGenre(genre) {
-    var genreAssociationtable = {
-        'Action': "Pizza",
-        'Adventure': "Sandwich",
-        'Animation': "Colorful",
-        'Biography': "Hot Dog",
-        'Comedy': "French fries",
-        'Crime': "Scary",
-        'Documentary': "Stew",
-        'Drama': "Steak",
-        'Family': "Kid Friendly",
-        'Fantasy': "English",
-        'Film-Nior': "Pot-Pie",
-        'Game-Show': "Nachos",
-        'History': "Meatloaf",
-        'Horror': "Scary",
-        'Music': "Wine",
-        'Musical': "Wine",
-        'Mystery': "Spam",
-        'News': "Salmon",
-        'Reality-TV': "Salad",
-        'Romance': "Date Night",
-        'Sci-Fi': "Sushi",
-        'Sport': "Tailgate",
-        'Talk-Show': "Frozen Dinner",
-        'Thiller': "Italian",
-        'War': "Fried Chicken",
-        'Western': "Western",
-    }
-    //setting vaariable for cuisine
-    var cuisine = genreAssociationtable[genre];
-
-    if (cuisine) {
-        var edamamApiKey = 
-        var edamamApiUrl = 
-
-
-        $ajax({
-            url:
-            
-            
-        })
-        }
-    }
-
-}
-
-
-
-
-
-
-function getMealsuggestionsByLOcation(location) {
-    var
-    var
-    $ajax({});
-}
 
 function displayMealSuggestion(mealSuggestions) {
     var 
