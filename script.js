@@ -38,4 +38,67 @@ displaySearchHistory();
 
 
 
+//event handler for submit button
+$('#submitBtn').on('click', function() {
+    //setting a variable and setting value for eneteredMovie
+    var enteredMovie = $('movieInput').val();
+    //call the function to get movie details
+    getMoviedetails();
+})
 
+
+//function to get movie details
+function getMoviedetails(movie) {
+    var 
+    var
+    $ajax({});
+}
+
+function getMealsuggestionsByGenre(genre) {
+    var genreAssociationtable = {
+        'Action': "Pizza",
+        'Adventure': "Sandwich",
+        'Animation': "Colorful",
+        'Biography': "Hot Dog",
+        'Comedy': "French fries",
+        'Crime': "Scary",
+        'Documentary': "Stew",
+        'Drama': "Steak",
+        'Family': "Kid Friendly",
+        'Fantasy': "English",
+        'Film-Nior': "Pot-Pie",
+        'Game-Show': "Nachos",
+        'History': "Meatloaf",
+        'Horror': "Scary",
+        'Music': "Wine",
+        'Musical': "Wine",
+        'Mystery': "Spam",
+        'News': "Salmon",
+        'Reality-TV': "Salad",
+        'Romance': "Date Night",
+        'Sci-Fi': "Sushi",
+        'Sport': "Tailgate",
+        'Talk-Show': "Frozen Dinner",
+        'Thiller': "Italian",
+        'War': "Fried Chicken",
+        'Western': "Western",
+    }
+    var cuisine
+
+}
+
+
+
+
+
+
+function getMealsuggestionsByLOcation(location) {
+    var
+    var
+    $ajax({});
+}
+
+function displayMealSuggestion(mealSuggestions) {
+    var 
+
+}
