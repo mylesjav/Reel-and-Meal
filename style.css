@@ -147,9 +147,14 @@ nav i.link-icon {
 }
 
 /* search results */
-.search-results, 
-.search-results .recipe {
+.recipes, 
+.search-results .recipe, 
+.previous-search .recipe {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* hides elements */
+.hidden {
+  display: none;
+}
