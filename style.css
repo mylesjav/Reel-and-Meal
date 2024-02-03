@@ -8,7 +8,7 @@ header {
 /* search container */
 .search-container{
   text-align: center;
-  background-color: #c2b5a8;
+  background-color: #1f1f1f;
   padding: 70px;
   margin: 10px;
   color: white
@@ -137,5 +137,16 @@ form#search_movie button:hover {
 nav {
   background-color: #8B0000;
   font-weight: bold;
+}
+
+nav i.link-icon {
+  display: inline;
+}
+
+/* search results */
+.search-results, 
+.search-results .recipe {
+  display: flex;
+  flex-wrap: wrap;
 }
 
