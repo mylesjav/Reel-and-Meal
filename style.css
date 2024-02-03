@@ -1,9 +1,10 @@
 /* Header*/
 header {
   font-weight: bold;
-  background-color: #a39f9f;
+  background-color: white;
   font-size: 55px;
   padding: 8px;
+  text-align: center;
 }
 /* search container */
 .search-container{
