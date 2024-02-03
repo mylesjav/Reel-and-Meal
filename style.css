@@ -1,7 +1,6 @@
 /* Header*/
 header {
   font-weight: bold;
-  background-color: white;
   font-size: 55px;
   padding: 8px;
   text-align: center;
@@ -9,9 +8,10 @@ header {
 /* search container */
 .search-container{
   text-align: center;
-  background-color: #c9c5c5;
+  background-color: #c2b5a8;
   padding: 70px;
   margin: 10px;
+  color: white
 }
 /* Stlye for the search and submit button */
 form#search_movie input{
@@ -31,15 +31,16 @@ form#search_movie button{
   width: 270px;
   height: 40px;
   line-height: 1px;
- background: #020202;
- color: red;
+ background: #8B0000;
+ color: white;
+ font-weight: bold;
  border: #020202 1px solid;
  border-radius: 8px;
   font-size: 18px;
  cursor: pointer;
 }
 form#search_movie button:hover {
- background: #6a6c6e;
+ background: #b90e0a;
  color: #dbd9d9;
 }
 /* Container for the movie titles */
@@ -132,7 +133,9 @@ form#search_movie button:hover {
  }
 }
 
+/* navigation */
 nav {
   background-color: #8B0000;
   font-weight: bold;
 }
+
