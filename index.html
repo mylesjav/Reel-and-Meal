@@ -51,19 +51,21 @@
           <div class="row">
             <div class="input-field col s12 offset-m3 m6">
               <i class="material-icons prefix">movie_filter</i>
-              <textarea
-                id="icon_prefix2"
-                class="materialize-textarea"
-              ></textarea>
-              <label for="icon_prefix2">Movie Title</label>
+              <input
+                id="icon_prefix"
+                type="text"
+                class="validate materialize-input"
+              />
+              <label for="icon_prefix">Movie Title</label>
             </div>
           </div>
+
           <button>Get your Meals</button>
         </form>
       </div>
     </section>
 
-    <section class="search-results hidden">
+    <section class="search-results">
       <h3 class="Name-Tag">[user movie]</h3>
       <div class="row recipes">
         <!--recipe card 1-->
@@ -151,7 +153,7 @@
       </div>
     </section>
 
-    <section class="previous-search hidden">
+    <section class="previous-search">
       <h3 class="Name-Tag">[previous user movie]</h3>
       <div class="row recipes">
         <!--recipe card 1-->
