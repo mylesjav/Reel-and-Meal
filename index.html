@@ -19,18 +19,18 @@
 <!--Navigation-->
       <nav>
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo"><i class="material-icons">movie</i>Reel and Meal</a>
+        <a href="#!" class="brand-logo"><i class="material-icons">movie_filter</i>Reel and Meal<i class="material-icons">restaurant</i></a> 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="favorites.html">Past Searches</a></li>
+        <li><a href="favorites.html"><i class="material-icons">history</i>Past Searches</a></li>
       </ul>
     </div>
   </nav>
 <!--Title and Description-->
-    <h1>Reel and Meal</h1>
+    <header>Reel and Meal</header>
     <h3> <i class="material-icons">restaurant</i> Find the perfect meal for your reel</h3>
     <div class="row">
 <!--Form-->
-      <form class="col s12">
+      <form id= "search_movie" class="col s12">
         <div class="row">
           <div class="input-field col s6">
             <i class="material-icons prefix">movie_filter</i>
@@ -38,27 +38,43 @@
             <label for="icon_prefix2">Movie Title</label>
           </div>
         </div>
+        <button>Get your Meals</button>
       </form>
     </div>
-    <button>Get your Meals</button>
-
-<!--navigation-->
-    <div class="row">
-      <div class="col s12 m7">
-        <div class="card">
-          <div class="card-image">
-            <img src="images/sample-1.jpg">
-            <span class="card-title">Recipe Name</span>
-          </div>
-          <div class="card-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-          </div>
-          <div class="card-action">
-            <a href="#">See Full Recipe</a>
-          </div>
-        </div>
+    
+<!--recipe card-->
+<div class="row" style="border: 1px red solid;"> 
+  <div id="recipe-1" class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img class="recipe-image" src="">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a class="recipe-link" href="#">See Recipe</a>
       </div>
     </div>
+  </div>
+  
+  <div id="recipe-1" class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img class="recipe-image" src="">
+        <span class="card-title">Card Title</span>
+      </div>
+      <div class="card-content">
+        <p>I am a very use effectively.</p>
+      </div>
+      <div class="card-action">
+        <a class="recipe-link" href="#">See Recipe</a>
+      </div>
+    </div>
+  </div>
+
+</div>
               
 
   

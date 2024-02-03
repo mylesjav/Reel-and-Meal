@@ -26,12 +26,12 @@ form#search_movie input{
   padding: 12px;
 }
 /* Submit button style */
-form#search_movie button {
+form#search_movie button{ 
   width: 270px;
   height: 40px;
   line-height: 1px;
  background: #020202;
- color: white;
+ color: red;
  border: #020202 1px solid;
  border-radius: 8px;
   font-size: 18px;
@@ -46,13 +46,13 @@ form#search_movie button:hover {
   text-align: center;
 }
  /* Card Container */
- .card-container {
+ /* .card-container {
   display: flex;
   justify-content: space-around; 
   flex-wrap: wrap;
-}
+} */
 /* Card  */
-.card {
+/* .card {
   display: flex;
   flex-direction: column;
   width: 17%;
@@ -61,7 +61,7 @@ form#search_movie button:hover {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Card Image */
 .card img {
@@ -129,4 +129,9 @@ form#search_movie button:hover {
  .button{
   padding: 0;
  }
+}
+
+nav {
+  background-color: #8B0000;
+  font-weight: bold;
 }
