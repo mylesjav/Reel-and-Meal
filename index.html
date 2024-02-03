@@ -1,48 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Compiled and minified Materialize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-  
-    
-            
+
     <title>Reel and Meal</title>
-  
-</head>
-<body>
-      <nav>
-    <div class="nav-wrapper">
-        <a href="#!" class="brand-logo"><i class="material-icons">movie</i>Reel and Meal</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="favorites.html">Past Searches</a></li>
-      </ul>
-    </div>
-  </nav>
-    <h1>Reel and Meal</h1>
-    <h3> <i class="material-icons">restaurant</i> Find the perfect meal for your reel</h3>
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s6">
-            <i class="material-icons prefix">movie_filter</i>
-            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-            <label for="icon_prefix2">Movie Title</label>
+  </head>
+  <body>
+    <!--Navigation-->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"
+          ><i class="material-icons">movie_filter</i>Reel and Meal<i
+            class="material-icons"
+            >restaurant</i
+          ></a
+        >
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="favorites.html"
+              ><i class="material-icons link-icon">history</i
+              ><span>Previous Search</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="search-container">
+      <!--Title and Description-->
+      <header>Reel and Meal</header>
+      <h3>
+        <i class="material-icons">restaurant</i> Find the perfect meal for your
+        reel
+      </h3>
+      <div class="row">
+        <!--Form-->
+        <form id="search_movie" class="col s12">
+          <div class="row">
+            <div class="input-field col s12 offset-m3 m6">
+              <i class="material-icons prefix">movie_filter</i>
+              <textarea
+                id="icon_prefix2"
+                class="materialize-textarea"
+              ></textarea>
+              <label for="icon_prefix2">Movie Title</label>
+            </div>
+          </div>
+          <button>Get your Meals</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="search-results hidden">
+      <h3 class="Name-Tag">[user movie]</h3>
+      <div class="row recipes">
+        <!--recipe card 1-->
+        <div id="recipe-1" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
           </div>
         </div>
-      </form>
-    </div>
-    
 
+        <!--recipe card 2-->
+        <div id="recipe-2" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
 
- <!--  Scripts-->
- <!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="script.js"></script>
-</body>
+        <!--recipe card 3-->
+        <div id="recipe-3" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <!--recipe card 4-->
+        <div id="recipe-4" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat..
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="previous-search hidden">
+      <h3 class="Name-Tag">[previous user movie]</h3>
+      <div class="row recipes">
+        <!--recipe card 1-->
+        <div id="recipe-1" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <!--recipe card 2-->
+        <div id="recipe-2" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <!--recipe card 3-->
+        <div id="recipe-3" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <!--recipe card 4-->
+        <div id="recipe-4" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat..
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  Scripts-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

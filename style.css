@@ -1,16 +1,17 @@
 /* Header*/
 header {
   font-weight: bold;
-  background-color: #a39f9f;
   font-size: 55px;
   padding: 8px;
+  text-align: center;
 }
 /* search container */
 .search-container{
   text-align: center;
-  background-color: #c9c5c5;
+  background-color: #1f1f1f;
   padding: 70px;
   margin: 10px;
+  color: white
 }
 /* Stlye for the search and submit button */
 form#search_movie input{
@@ -26,19 +27,20 @@ form#search_movie input{
   padding: 12px;
 }
 /* Submit button style */
-form#search_movie button {
+form#search_movie button{ 
   width: 270px;
   height: 40px;
   line-height: 1px;
- background: #020202;
+ background: #8B0000;
  color: white;
+ font-weight: bold;
  border: #020202 1px solid;
  border-radius: 8px;
   font-size: 18px;
  cursor: pointer;
 }
 form#search_movie button:hover {
- background: #6a6c6e;
+ background: #b90e0a;
  color: #dbd9d9;
 }
 /* Container for the movie titles */
@@ -46,13 +48,13 @@ form#search_movie button:hover {
   text-align: center;
 }
  /* Card Container */
- .card-container {
+ /* .card-container {
   display: flex;
   justify-content: space-around; 
   flex-wrap: wrap;
-}
+} */
 /* Card  */
-.card {
+/* .card {
   display: flex;
   flex-direction: column;
   width: 17%;
@@ -61,7 +63,7 @@ form#search_movie button:hover {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Card Image */
 .card img {
@@ -97,23 +99,26 @@ form#search_movie button:hover {
   max-height: 150px;
 }
 
-/* Card Link */
-.card-link {
+/* Card Link */ 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color:#8B0000
+}
+/* .recipe-link {
   display: flex;
   justify-content: center;
-  margin-top: 60%;
-  border: 1px solid black;
+  /* margin-top: 60%; */
+  /* border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
-  text-decoration: none;
-  color: #000000;
-  font-size: 12px;
+  text-decoration: none; */
+  /* font-size: 12px;
   font-weight: bold;
-}
+  background-color:#b90e0a ;}  */
 
 /* Hover effect on the link */
-.card-link:hover {
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
   text-decoration: underline;
+  color:#8B0000
 }
 /* Adjusts to the size of screen */
 @media screen and (max-width: 768px) {
@@ -129,4 +134,27 @@ form#search_movie button:hover {
  .button{
   padding: 0;
  }
+}
+
+/* navigation */
+nav {
+  background-color: #8B0000;
+  font-weight: bold;
+}
+
+nav i.link-icon {
+  display: inline;
+}
+
+/* search results */
+.recipes, 
+.search-results .recipe, 
+.previous-search .recipe {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* hides elements */
+.hidden {
+  display: none;
 }
