@@ -45,6 +45,18 @@ $(document).ready(function () {
   });
 
   //function to get movie details
+  var ombdApiKey = "a32eb036";
+  var movieTitle ();
+  async function logMovie() {
+    const response = await fetch(
+      `http://www.omdbapi.com/?i=tt3896198&apikey=a32eb036`
+    );
+    console.log(response);
+    const responseJSON = await response.json();
+    console.log(responseJSON)
+  }
+  logMovie();
+
   function getMoviedetails(movie) {
     // var apiKey = "6f74afba579fd22cb4c993e9febf8338";
     // var apiId = "a9029ae2";
