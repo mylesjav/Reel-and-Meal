@@ -67,7 +67,7 @@ $(document).ready(function() {
     
     //ombd fetch
     var ombdApiKey = "a32eb036";
-    var movieTitle ();
+    var movieTitle = ("");
     async function logMovie() {
       const response = await fetch(
         `http://www.omdbapi.com/?i=tt3896198&apikey=a32eb036`
@@ -79,48 +79,48 @@ $(document).ready(function() {
     logMovie();
 
     //function to get movie details
-    function getMoviedetails(movie) {
-        var ombdApiKey = 
-        var ombdApiUrl =
-        $ajax({
-            url:
-            method: "GET"
-            data: {
-                apikey: ombdApiKey,
-                t: movie
-            }
-            success: function(movieData) {
-                var movieLocation = movieData.Country;
-                var movieGenre = movieData.Genre;
+    // function getMoviedetails(movie) {
+    //     var ombdApiKey = 
+    //     var ombdApiUrl =
+    //     $ajax({
+    //         url:
+    //         method: "GET"
+    //         data: {
+    //             apikey: ombdApiKey,
+    //             t: movie
+    //         }
+    //         success: function(movieData) {
+    //             var movieLocation = movieData.Country;
+    //             var movieGenre = movieData.Genre;
 
-                if (movieLocation && movieLocation.trim() !== '') {
-                    getMealsuggestionsByLOcation(movieLocation);
-                } else {
-                    getMealsuggestionsByGenre(movieGenre);
-                }
-            },
-            error: function(error) {
-                console.error("Error fetching movie details: ", error);
-            }
-        });
-    }
+    //             if (movieLocation && movieLocation.trim() !== '') {
+    //                 getMealsuggestionsByLOcation(movieLocation);
+    //             } else {
+    //                 getMealsuggestionsByGenre(movieGenre);
+    //             }
+    //         },
+    //         error: function(error) {
+    //             console.error("Error fetching movie details: ", error);
+    //         }
+    //     });
+    // }
     
-    function getMealsuggestionsByLOcation(location) {
-        var edamamApiKey
-        var edamamApiUrl
-        $ajax({
-            url:
-            method:
-            data:
-            success: function(mealData) {
-                var mealSuggestions = mealData.hits;
-                displayMealSuggestion(mealSuggestions);
-            },
-            error: function(error) {
-                console.error('Error fetching Meal suggestions:', error);
-            }
-        });
-    }
+    // function getMealsuggestionsByLOcation(location) {
+    //     var edamamApiKey
+    //     var edamamApiUrl
+    //     $ajax({
+    //         url:
+    //         method:
+    //         data:
+    //         success: function(mealData) {
+    //             var mealSuggestions = mealData.hits;
+    //             displayMealSuggestion(mealSuggestions);
+    //         },
+    //         error: function(error) {
+    //             console.error('Error fetching Meal suggestions:', error);
+    //         }
+    //     });
+    // }
 
     function getMealsuggestionsByGenre(genre) {
         var genreAssociationtable = {
@@ -153,30 +153,30 @@ $(document).ready(function() {
         };
         var cuisine = genreAssociationtable[genre];
 
-        if (cuisine) {
-            var edamamApiKey = 
-            var edamamApiUrl = 
+        // if (cuisine) {
+        //     var edamamApiKey = 
+        //     var edamamApiUrl = 
     
     
-            $ajax({
-                url:
-                method:
-                data: {}
-                success: function(mealData) {
-                    var mealSuggestions = mealData.hits;
+            // $ajax({
+            //     url:
+            //     method:
+            //     data: {}
+            //     success: function(mealData) {
+            //         var mealSuggestions = mealData.hits;
 
-                    displayMealSuggestion(mealSuggestions);
-                },
-                error: function(error) {
-                    console.error("Error fetching meal suggestions:", error);
-                }
+            //         displayMealSuggestion(mealSuggestions);
+            //     },
+            //     error: function(error) {
+            //         console.error("Error fetching meal suggestions:", error);
+            //     }
                 
                 
-            });
+            // });
             
-        }else {
-            console.error("No corresponding cuisine found for the movie genre.");
-        }
+        // }else {
+        //     console.error("No corresponding cuisine found for the movie genre.");
+        // }
 
     }
 
@@ -186,7 +186,7 @@ $(document).ready(function() {
 
 
 
-function displayMealSuggestion(mealSuggestions) {
-    var 
+// function displayMealSuggestion(mealSuggestions) {
+//     var 
 
-}
+// }g
