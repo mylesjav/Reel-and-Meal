@@ -51,7 +51,7 @@ $(document).ready(function() {
         getMoviedetails();
     });
 
- ombd fetch
+//  ombd fetch
  var ombdApiKey = "a32eb036";
  var movieTitle = ("");
  async function logMovie() {
@@ -65,17 +65,17 @@ $(document).ready(function() {
  }
  logMovie();
 
- get genre of movie
+//  get genre of movie
 
- convert movieGenre to foodType with associaion table
+//  convert movieGenre to foodType with associaion table
 
     //edmam fetch
     var apiKey = "6f74afba579fd22cb4c993e9febf8338";
     var apiId = "a9029ae2";
-    var foodType = ("");
+    var foodType = (genreAssociationtable);
     async function logRecipe() {
       const response = await fetch(
-        `https://api.edamam.com/search?q=china&app_id=${apiId}&app_key=${apiKey}`
+        `https://api.edamam.com/search?q=${foodType}app_id=${apiId}&app_key=${apiKey}`
       );
       console.log(response);
       const responseJSON = await response.json();
@@ -85,17 +85,16 @@ $(document).ready(function() {
     
     function to get movie details
     function getMoviedetails(movie) {
-        var ombdApiKey = 
-        var ombdApiUrl =
+        var ombdApiKey = "a32eb036"
+        var ombdApiUrl = "http://www.omdbapi.com/?i=tt3896198&apikey=${ombdApiKey}"
         $ajax({
-            url:
             method: "GET"
             data: {
                 apikey: ombdApiKey,
                 t: movie
             }
             success: function(movieData) {
-                var movieLocation = movieData.Country;
+                // var movieLocation = movieData.Country;
                 var movieGenre = movieData.Genre;
 
                 if (movieLocation && movieLocation.trim() !== '') {
@@ -111,8 +110,8 @@ $(document).ready(function() {
     }
     
     function getMealsuggestionsByLOcation(location) {
-        var edamamApiKey
-        var edamamApiUrl
+        var edamamApiKey = ("6f74afba579fd22cb4c993e9febf8338");
+        var edamamApiUrl = "https://api.edamam.com/search?q=${foodType}app_id=${apiId}&app_key=${apiKey}"
         $ajax({
             url:
             method:
@@ -194,4 +193,4 @@ $(document).ready(function() {
 function displayMealSuggestion(mealSuggestions) {
     var 
 
-}g
+}
