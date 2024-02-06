@@ -46,7 +46,7 @@ $(document).ready(function () {
 
   //function to get movie details
   var ombdApiKey = "a32eb036";
-  var movieTitle ();
+  var movieTitle = ("");
   async function logMovie() {
     const response = await fetch(
       `http://www.omdbapi.com/?i=tt3896198&apikey=a32eb036`
@@ -58,17 +58,17 @@ $(document).ready(function () {
   logMovie();
 
   function getMoviedetails(movie) {
-    // var apiKey = "6f74afba579fd22cb4c993e9febf8338";
-    // var apiId = "a9029ae2";
-    // async function logRecipe() {
-    //   const response = await fetch(
-    //     `https://api.edamam.com/search?q=chicken&app_id=${apiId}&app_key=${apiKey}`
-    //   );
-    //   console.log(response);
-    //   const responseJSON = await response.json();
-    //   console.log(responseJSON);
-    // }
-    // logRecipe();
+    var apiKey = "6f74afba579fd22cb4c993e9febf8338";
+    var apiId = "a9029ae2";
+    async function logRecipe() {
+      const response = await fetch(
+        `https://api.edamam.com/search?q=chicken&app_id=${apiId}&app_key=${apiKey}`
+      );
+      console.log(response);
+      const responseJSON = await response.json();
+      console.log(responseJSON);
+    }
+    logRecipe();
     // $ajax({
     //     url:
     //     method: "GET"
@@ -120,19 +120,19 @@ $(document).ready(function () {
       Drama: "Steak",
       Family: "Kid Friendly",
       Fantasy: "English",
-      "Film-Nior": "Pot-Pie",
-      "Game-Show": "Nachos",
+      // Film-Noir: "Pot-Pie",
+      // Game-Show: "Nachos",
       History: "Meatloaf",
       Horror: "Scary",
       Music: "Wine",
       Musical: "Wine",
       Mystery: "Spam",
       News: "Salmon",
-      "Reality-TV": "Salad",
+      // Reality-TV: "Salad",
       Romance: "Date Night",
-      "Sci-Fi": "Sushi",
+      Sci-Fi: "Sushi",
       Sport: "Tailgate",
-      "Talk-Show": "Frozen Dinner",
+      // Talk-Show: "Frozen Dinner",
       Thiller: "Italian",
       War: "Fried Chicken",
       Western: "Western",
