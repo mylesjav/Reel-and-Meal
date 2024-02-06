@@ -26,7 +26,8 @@ function displaySearchHistory(targetDivId) {
     //for loop for each search term to display(jquery)
     searchHistory.forEach(function (term) {
         //append a new div to the search history div
-        searchHistoryDiv.append(`<div>${term}</div>`);
+        var searchItem = $('<div>').text(term).addClass('previous-search-item');
+        searchHistoryDiv.append(searchItem);
     });
 
 };
@@ -65,6 +66,9 @@ $(document).ready(function () {
                         console.error("Genre not found.");
                     }
                 })
+                .then(function () {
+                    $('.Name-Tag').text(enteredMovie);
+                })
                 .catch(function (error) {
                     console.error("Error getting movie:", error);
                 });
@@ -89,6 +93,7 @@ $(document).ready(function () {
                 console.log("Omdb api response:", responseJSON);
                 var movieGenre = responseJSON.Genre;
                 saveSearchToLocal(enteredMovie);
+                displaySearchHistory('previousSearchHistory');
                 return movieGenre;
             })
             .catch(function (error) {
@@ -205,6 +210,7 @@ $(document).ready(function () {
 
     };
 
+    displaySearchHistory('previousSearchHistory');
 
 });
 
