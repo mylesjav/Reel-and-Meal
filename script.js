@@ -1,9 +1,3 @@
-console.log("hello world");
-
-
-
-
-
 //function to save search terms to local stroage
 function saveSearchToLocal(searchTerm) {
     //retrieve existing search history from local storage
