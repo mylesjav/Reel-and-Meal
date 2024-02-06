@@ -149,7 +149,7 @@ $(document).ready(function () {
         var edamamApiKey = "6f74afba579fd22cb4c993e9febf8338";
         var edamamApiId = "a9029ae2";
 
-        fetch(`https://api.edamam.com/search?q=${cuisine}&app_id=${edamamApiId}&app_key=${edamamApiKey}&to=5`)
+        fetch(`https://api.edamam.com/search?q=${cuisine}&app_id=${edamamApiId}&app_key=${edamamApiKey}&to=4`)
             .then(function (response) {
                 return response.json();
     
