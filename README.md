@@ -17,8 +17,10 @@ HTML
 CSS (Materialize CSS framework)
 JavaScript (with jQuery library for DOM manipulation)
 Material Icons (for navigation icons)
-How to Use
-Open the index.html file in a web browser.
+
+# How to Use
+
+Navigate to https://mylesjav.github.io/Reel-and-Meal/
 Use the search form to enter the title of the movie you want to find a recipe for.
 Click the "Get your Meals" button to search.
 View the recommended recipes in the search results section.
