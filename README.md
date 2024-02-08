@@ -29,7 +29,3 @@ Optionally, click on "Previous Search" in the navigation bar to see past search 
 # Contributors
 
 Myles, Aileen, Ajay, Kristian
-
-# Website
-
-https://mylesjav.github.io/Reel-and-Meal/
