@@ -5,6 +5,18 @@ header {
   padding: 8px;
   text-align: center;
 }
+
+/* navigation */
+nav {
+  background-color: #8B0000;
+  font-weight: bold;
+  padding: 8px;
+}
+
+nav i.link-icon {
+  display: inline;
+}
+
 /* search container */
 .search-container{
   text-align: center;
@@ -13,7 +25,7 @@ header {
   margin: 10px;
   color: white
 }
-/* Stlye for the search and submit button */
+/* Stlye for the search and submit button removed since materailize has this */
 /* form#search_movie input{
   padding: 10px;
  font-size: 15px;
@@ -22,6 +34,7 @@ header {
   background: #fffefe;
   border-radius: 8px;
 } */
+
 /* Container for submit button to move down line */
 .button{
   padding: 12px;
@@ -59,6 +72,8 @@ form#search_movie input{
 /* Container for the movie titles */
 .Name-Tag {
   text-align: center;
+  color: #8B0000
+  
 }
  /* Card Container */
  /* .card-container {
@@ -135,31 +150,7 @@ form#search_movie input{
   text-decoration: underline;
   color:#8B0000
 }
-/* Adjusts to the size of screen */
-@media screen and (max-width: 768px) {
-     .card-container {
-    flex-wrap: wrap;
- }
- .card{
-  width:100%;
- }
- header{
-  text-align: center;
- }
- .button{
-  padding: 0;
- }
-}
 
-/* navigation */
-nav {
-  background-color: #8B0000;
-  font-weight: bold;
-}
-
-nav i.link-icon {
-  display: inline;
-}
 
 /* search results */
 .recipes, 
@@ -169,15 +160,47 @@ nav i.link-icon {
   flex-wrap: wrap;
 }
 
-/* search results */
 .search-results .error-message {
   color:#8B0000;
   text-align: center;
   font-weight: bold;
 }
 
+/* previous search history */
+.previous-search{
+  text-align:center;
+  padding: 8px;
+  color:#8B0000;
+  font-weight: bold;
+  
+}
+
+.previous-search-item{
+  font-weight: bold;
+  font-size: 25px;
+  padding: 8px;
+  color:#020202
+}
+
+
 /* hides elements */
 .hidden {
   display: none;
 }
 
+
+/* Adjusts to the size of screen */
+@media screen and (max-width: 768px) {
+  .card-container {
+ flex-wrap: wrap;
+}
+.card{
+width:100%;
+}
+header{
+text-align: center;
+}
+.button{
+padding: 0;
+}
+}
