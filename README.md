@@ -31,4 +31,4 @@ Optionally, click on "Previous Search" in the navigation bar to see past search 
 Myles, Aileen, Ajay, Kristian
 
 https://github.com/mylesjav/Reel-and-Meal.git
-https://github.com/mylesjav/Reel-and-Meal
+https://mylesjav.github.io/Reel-and-Meal/
